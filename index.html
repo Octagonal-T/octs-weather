@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styleSearch.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"/>
+  <title>Weather search</title>
+</head>
+<body>
+  <input class="title" type="text" placeholder="Search for a city (please name only)"><button onclick="loadCityName()" id="search">search</button>
+  <br><br><button onclick="loadCurrentLocation()" id="geolocation">use current location*</button>
+  <footer>*geolocation accuracy is <span id="accuracy"></span> meters<br>if it's bad it's probably because you're on a <br>device that doesn't have a gps chip in it, so it's using<br> cell towers, your IP address, or satelites</footer>
+  Made by Octagonal_t, report bugs to octagonal t#7921 on Discord
+  <script>
+    navigator.geolocation.getCurrentPosition(pos => {
+      document.getElementById('accuracy').innerHTML=Math.round(pos.coords.accuracy)
+    })
+    let loadCityName = () => {
+      window.location.href=`./weather.html?city=${document.getElementsByClassName('title')[0].value}`
+    }
+    let loadCurrentLocation = () => {
+      navigator.geolocation.getCurrentPosition(pos => {
+        window.location.href=`./weather.html?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}`
+      })
+    }
+  </script>
+</body>
+</html>
