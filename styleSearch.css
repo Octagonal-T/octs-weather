@@ -1,0 +1,104 @@
+/*small devices*/
+@media only screen and (max-width:600px){
+	body{
+		background: url('./backgrounds/clear.png') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		color: black;
+		font-family: Verdana, sans-serif; 
+	}
+	.title{
+		font-size: 20px;
+		padding: 20px;
+		min-height: 30px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black
+	}
+	input[type=text] {
+		background-image: url('./icons/searchicon.png');
+		background-position: 10px 10px; 
+		background-repeat: no-repeat;
+		width: 20%;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+	input[type=text]:focus {
+		width: 85%;
+	}
+	button{
+		background-color: white;
+		color: black;
+		padding: 14px 28px;
+		cursor: pointer;
+		transition-duration: 0.4s;
+		border-radius: 8px;
+		border: 2px solid #555555;
+		font-size: 20px;
+		height: 70px;
+	}
+	button:hover{
+		background-color: #555555;
+		color: white
+	}
+	button:disabled:hover{
+		background-color: white;
+		color: black;
+	}
+}
+@media only screen and (min-width: 600px){
+	body{
+		background: url('./backgrounds/clear.png') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		color: black;
+		font-family: Verdana, sans-serif; 
+	}
+	.title{
+		font-size: 30px;
+		padding: 20px;
+		min-height: 50px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		left: 500px;
+		border-radius: 5px;
+		border-color: black
+	}
+	input[type=text] {
+		background-image: url('./icons/searchicon.png');
+		background-position: 10px 10px; 
+		background-repeat: no-repeat;
+		width: 20%;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+	input[type=text]:focus {
+		width: 94%;
+	}
+	button{
+		background-color: white;
+		color: black;
+		padding: 14px 28px;
+		font-size: 30px;
+		min-height: 90px;
+		cursor: pointer;
+		transition-duration: 0.4s;
+		border-radius: 8px;
+		border: 2px solid #555555;
+	}
+	button:hover{
+		background-color: #555555;
+		color: white
+	}
+	button:disabled:hover{
+		background-color: white;
+		color: black;
+	}
+}

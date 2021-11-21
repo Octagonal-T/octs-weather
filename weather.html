@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"/>
+  <title>Weather</title>
+</head>
+<body>
+  <div class="title">loading</div>
+  <br>
+  <div class="wrapper">
+    <div class="currentForecast">
+      <div class="firstCurrentForecast">
+        <div><img src="./icons/sunrise.png" width=25>Sunrise at <span id="sunrise"></span></div><br>
+        <div><img src="./icons/sunset.png" width=25>Sunset at <span id="sunset"></span></div><br>
+        <div><img src="./icons/tempature.png"width=25>Tempature:<span id="tempature"></span></div><br>
+        <div><img src="./icons/tempature.png"width=25>Feels like:<span id="feelsLike"></span></div><br>
+      </div>
+      <div class="secondCurrentForecast">
+        <div><img src="./icons/humidity.png"width=25>Humidity:<span id="humidity"></span></div><br>
+        <div><img src="./icons/clouds.png"width=25>Clouds:<span id="clouds"></span></div><br>
+        <div><img src="./icons/uv.png"width=25>UV:<span id="uv"></span></div><br>
+        <div><img src="./icons/wind.png"width=25>Wind speed:<span id="windSpeed"></span></div><br>
+      </div>
+    </div>
+    <div class="placeholder forecastWeather">.</div>
+    <div class="currentWeather">
+      <div>
+        <div style="font-size: 30px;"><img id="weatherImage"src=""width=35><span id="weatherMain"></span></div><br><br>
+        <div style="font-size: 20px;" id="weatherDisc"></div>
+      </div>
+    </div>
+    <div class="placeholder weatherInfo">.</div>
+    <div class="information">
+			<div>Country code: <span id="countryCode"></span><br><br>Timezone: <span id="timezone"></span><br><br>Longitude: <span id="lon"></span><br><br>Latitude: <span id="lat"></span></div>
+    </div>
+  </div>
+  <div class="placeholder clear">.</div>
+  <div class="sevenDayForecast"style="padding-top: 10px;float: left">
+    <div id="sevenDayForecastOne"></div><div style="padding-left: 20px;"id="sevenDayForecastTwo"></div><div style="padding-left: 20px;"id="sevenDayForecastThree"></div><div style="padding-left: 20px;"id="sevenDayForecastFour"></div><div style="padding-left: 20px;"id="sevenDayForecastFive"></div><div style="padding-left: 20px;"id="sevenDayForecastSix"></div><div style="padding-left: 20px;"id="sevenDayForecastSeven"></div>
+  </div>
+  <div class="placeholder clear">.</div>
+  <div class="hourlyForecast"style="padding-top: 10px;float: left;">
+    <div id="hourlyForecast1"></div>
+    <div id="hourlyForecast2"></div>
+    <div id="hourlyForecast3"></div>
+    <div id="hourlyForecast4"></div>
+    <div id="hourlyForecast5"></div>
+    <div id="hourlyForecast6"></div>
+    <div id="hourlyForecast7"></div>
+    <div id="hourlyForecast8"></div>
+    <div id="hourlyForecast9"></div>
+    <div id="hourlyForecast10"></div>
+    <div id="hourlyForecast11"></div>
+    <div id="hourlyForecast12"></div>
+    <div id="hourlyForecast13"></div>
+    <div id="hourlyForecast14"></div>
+    <div id="hourlyForecast15"></div>
+    <div id="hourlyForecast16"></div>
+    <div id="hourlyForecast17"></div>
+    <div id="hourlyForecast18"></div>
+    <div id="hourlyForecast19"></div>
+    <div id="hourlyForecast20"></div>
+    <div id="hourlyForecast21"></div>
+    <div id="hourlyForecast22"></div>
+    <div id="hourlyForecast23"></div>
+    <div id="hourlyForecast24"></div>
+  </div>
+</body>
+</html>

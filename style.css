@@ -1,0 +1,303 @@
+body{
+	background: url('./backgrounds/clear.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: black;
+	font-family: Verdana, sans-serif; 
+	transition-duration: 0.5s;
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	display: none;
+}
+::-webkit-scrollbar-thumb {
+	background: darkgray; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: gray; 
+}
+.placeholder{
+	color:#ffffff00;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+/*phones and portrait mobile devices*/
+@media only screen and (max-width: 992px){
+	.wrapper{
+		float: left;
+		overflow:hidden;
+	}
+	.title{
+		font-size: 30px;
+		text-align: center;
+		padding: 20px;
+		min-height: 50px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black
+	}
+	.currentForecast{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 225px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+	}
+	.currentWeather{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 150px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: 80%;
+	}
+	.information{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 200px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: 80%;
+	}
+	#tempature{
+		padding-left: 20px
+	}
+	button{
+		background-color: white;
+		color: black;
+		padding: 14px 28px;
+		font-size: 16px;
+		cursor: pointer;
+		transition-duration: 0.4s;
+		border-radius: 8px;
+		border: 2px solid #555555;
+	}
+	button:hover{
+		background-color: #555555;
+		color: white
+	}
+	button:disabled:hover{
+		background-color: white;
+		color: black;
+	}
+	.placeholder.clear{
+		clear: left;
+	}
+	.sevenDayForecast{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 290px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: 80%;
+		overflow: auto;
+		white-space: nowrap;
+	}
+	.sevenDayForecast div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+		max-height: 275px;
+	}
+	.sevenDayForecast div div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+	}
+	.hourlyForecast{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		height: 280px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: 80%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	.hourlyForecast div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+		max-height: 280px;
+	}
+	.hourlyForecast div div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+/*landscape tablets and desktops*/
+@media only screen and (min-width: 992px){
+	.title{
+		font-size: 30px;
+		text-align: center;
+		padding: 20px;
+		min-height: 50px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black
+	}
+	.firstCurrentForecast{
+		float: left;
+	}
+	.secondCurrentForecast{
+		float: left;
+		padding-left: 40px;
+	}
+	.currentForecast{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 225px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: fit-content;
+		float: left
+	}
+	.placeholder.forecastWeather{
+		float: left;
+	}
+	.placeholder.weatherInfo{
+		float: left;
+	}
+	.placeholder.clear{
+		clear: left;
+	}
+	.currentWeather{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 225px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: fit-content;
+		float: left;
+	}
+	.information{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 225px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: fit-content;
+		float: left;
+	}
+	#tempature{
+		padding-left: 20px
+	}
+	button{
+		background-color: white;
+		color: black;
+		padding: 14px 28px;
+		font-size: 16px;
+		cursor: pointer;
+		transition-duration: 0.4s;
+		border-radius: 8px;
+		border: 2px solid #555555;
+	}
+	button:hover{
+		background-color: #555555;
+		color: white
+	}
+	button:disabled:hover{
+		background-color: white;
+		color: black;
+	}
+	.sevenDayForecast{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		min-height: 290px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: 80%;
+		overflow: auto;
+		white-space: nowrap;
+	}
+	.sevenDayForecast div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+		max-height: 275px;
+	}
+	.sevenDayForecast div div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+	}
+	.hourlyForecast{
+		font-size: 20px;
+		padding: 20px 40px;
+		text-align: left;
+		height: 280px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+		position: center;
+		border-radius: 5px;
+		border-color: black;
+		width: 80%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	.hourlyForecast div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+		max-height: 280px;
+	}
+	.hourlyForecast div div{
+		overflow: auto;
+		display: inline-block;
+		text-decoration: none;
+	}
+}
